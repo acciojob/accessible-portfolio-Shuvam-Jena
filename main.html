@@ -3,35 +3,48 @@
 <html>
 
 <head>
+	<title>Accessible Portfolio</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
 	<header>
-		Portfolio OF SHUVAM
+		<h1 role="heading">Portfolio OF SHUVAM</h1>
 	</header>
-	<nav>
-		<a herf="#about">ABOUT</a>
-		<a herf="#project">POJECTS</a>
-		<a herf="">CONTACT</a>
+	<nav role="navigation">
+		<ul role="list">
+			<li role="listitem"><a href="#about">ABOUT</a></li>
+			<li role="listitem"><a href="#projects">PROJECTS</a></li>
+			<li role="listitem"><a href="#skills">SKILLS</a></li>
+		</ul>
 	</nav>
 	<main>
-		<img src='' alt=''>
+		<img role="img"  src="" alt="Shuvam Jena profile picture">
 
-		<section id='about'>
+		<section id="about">
 			<p>Hello! I'm Shuvam Jena, a web developer with a passion for creating accessible and user-friendly websites. Welcome to my portfolio!</p>
 		</section>
 
-		<section id='projet'>
+		<section id="projects">
 			<h2>MY PROJECTS</h2>
-			<ul>
-				<li>Project One: Accessible Web Design</li>
-				<li>Project Two: Responsive Layouts</li>
-				<li>Project Three: JavaScript Interactions</li>
+			<ul role="list">
+				<li role="listitem">Project One: Accessible Web Design</li>
+				<li role="listitem">Project Two: Responsive Layouts</li>
+				<li role="listitem">Project Three: JavaScript Interactions</li>
 			</ul>
 		</section>
+
+		<section id="skills">
+            <h2>SKILLS</h2>
+            <ul role="list">
+                <li role="listitem">HTML & CSS</li>
+                <li role="listitem">JavaScript</li>
+                <li role="listitem">MY SQL</li>
+            </ul>
+        </section>
 	</main>
+
 
 	
     <script type="text/javascript" src="./script.js">
